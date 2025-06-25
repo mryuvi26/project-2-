@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            width: 100%;
+        }
+        .box {
+            background: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        @media (min-width: 768px) {
+            .content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 1024px) {
+            .content {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Design</h1>
+    </header>
+    <div class="container">
+        <div class="content">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+            <div class="box">Box 4</div>
+            <div class="box">Box 5</div>
+            <div class="box">Box 6</div>
+        </div>
+    </div>
+</body>
+</html>

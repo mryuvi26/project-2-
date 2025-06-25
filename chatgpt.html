@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Position Scroll Animation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 200vh; /* For scrolling purpose */
+      background-color: #f0f0f0;
+    }
+
+    .hidden-section {
+      position: fixed;
+      top: 50%; /* Center it vertically */
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      width: 300px;
+      height: 300px;
+      background-color: #3498db;
+      transition: opacity 3s ease;
+    }
+
+    .visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hidden-section">
+    <h2 style="color: white; text-align: center; padding-top: 100px;">I am now visible!</h2>
+  </div>
+
+  <script>
+    // IntersectionObserver setup
+    const section = document.querySelector('.hidden-section');
+    
+    // IntersectionObserver callback
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add 'visible' class to show the section after 3 seconds
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, 3000); // 3 seconds delay before making the section visible
+        }
+      });
+    }, { threshold: 0.5 }); // Trigger when 50% of the element is in the viewport
+
+    // Start observing the section
+    observer.observe(section);
+  </script>
+
+</body>
+</html>
