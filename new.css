@@ -1124,7 +1124,7 @@ th {
     src: url(Poppins-Bold.ttf);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
 
      body{
          overflow-x: hidden;
