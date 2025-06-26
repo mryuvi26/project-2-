@@ -1144,7 +1144,7 @@ th {
     src: url(Poppins-Bold.ttf);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
 
     body {
         overflow-x: hidden;
@@ -1599,25 +1599,27 @@ th {
         overflow-x: hidden;
     }
     .s1 {
-        height: 600px;
+        height: 400px;
         background-position: center;
     }
     .s1 .d1 {
         width: 100vw;
         margin-left: 0;
-        height: 80px;
+        height: 60px;
         padding-top: 0;
+        flex-direction: row;
+        align-items: center;
         .d1img {
-            width: 200px;
-            height: 40px;
+            width: 120px;
+            height: 30px;
             margin-left: 10px;
             img {
-                width: 120px;
-                height: 40px;
+                width: 90px;
+                height: 30px;
             }
         }
         .home2 {
-            font-size: 22px;
+            font-size: 20px;
             margin-right: 10px;
         }
     }
