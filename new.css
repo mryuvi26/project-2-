@@ -817,7 +817,7 @@ th {
 .s5 .login {
     /* background-color: #43ba7f; */
     height: 630px;
-    width: 50%;
+    width: 80%;
     margin-left: 55%;
 
     & .text2 {
@@ -1032,8 +1032,8 @@ th {
     border-radius: 10px;
 
     & img {
-        width: 100%;
-        height: 100%;
+        /* width: 100%;
+        height: 100%; */
         border-radius: 0px 10px 10px 0px;
     }
 
@@ -1054,20 +1054,39 @@ th {
         height: 60%;
         display: flex;
         justify-content: center;
-        /* align-items: center; */
+        align-items: center;
         /* background-color: #f5f5f5; */
         margin-top: 50px;
-
-        & img {
+        .image1{
+          display: flex;
+            & img {
             height: 52px;
             width: 166px;
             margin: 20px;
         }
+        }
+          .image2{
+          display: flex;
+            & img {
+            height: 52px;
+            width: 166px;
+            margin: 20px;
+        }
+        }
+          .image3{
+          display: flex;
+            & img {
+            height: 52px;
+            width: 166px;
+            margin: 20px;
+        }
+        }
+      
     }
 
     & .copyright {
         background-color: #181d30;
-        margin-top: 150px;
+        margin-top: 50px;
         height: 40%;
         width: 100%;
         color: white;
@@ -1456,7 +1475,121 @@ th {
     }
 
     .s5 {
+
         /* display: none; */
-        
+        & .image {
+            display: none;
+        }
+
+        & .login {
+            /* background-color: #6b0000; */
+            margin-left: -10px;
+            width: 100%;
+           
+
+            & .heading {
+                width: 400px;
+                /* margin-left: -5px; */
+            }
+
+            & .login1 {
+                width: 300px;
+                margin-left: -20px;
+                & form{
+                    width: 400px;
+                    /* background-color: #15f070; */
+                }
+                
+            }
+            form .user{
+                width: 220px;
+                /* background-color: red; */
+                 & input{
+                    width: 220px;
+                 }
+            }
+             form .password{
+                width: 200px;
+                /* background-color: red; */
+                & input{
+                    width: 220px;
+                 }
+
+            }
+            
+            & .login2{
+                width: 500px;
+                margin-left: -20px;
+                /* background-color: #43ba7f; */
+             
+            }
+            form .subject{
+                /* background-color: red; */
+                input{
+                    width: 460px;
+                }
+            } 
+            form fieldset{
+                select{
+                    width: 460px;
+                }
+            }
+        }
+
+    }
+    .s6{
+       /* background-color: #28a745; */
+    }
+    .s6 .heading1{
+          width:450px;
+          /* background-color: #43ba7f; */
+          text-align: center;
+          h2{
+            width: 300px;
+            text-align: center;
+            /* background-color: red; */
+            margin-left: 60px
+          }
+    }
+    .s6 .card{
+        height: 500px;
+        margin-left: 50px;
+        width: 400px;
+    }
+    .para1{
+        /* background-color: #28a745; */
+        height: 500px;
+        & .text4{
+            width: 500px;
+          
+            p{
+             width: 300px;
+             /* height: 180px; */
+            /* background-color: red; */
+              margin-top: 60px;
+
+            }
+        }
+    }
+    .photo{
+        height: 150px;
+        width: 200px;
+        /* background-color: #28a745; */
+        margin-top: 30px;
+        margin-left: -80px;
+        & img{
+            background-color: #181d30;
+            width: 100px;
+            height: 150px;
+        }
+    }
+    .s7{
+        height: 500px;
+        & .photo1{
+            /* background-color: #FF511A; */
+            flex-direction: column;
+                   
+         
+        }
     }
 }
