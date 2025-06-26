@@ -1593,3 +1593,245 @@ th {
         }
     }
 }
+@media screen and (max-width: 412px) {
+    html, body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .s1 {
+        height: 600px;
+        background-position: center;
+    }
+    .s1 .d1 {
+        width: 100vw;
+        margin-left: 0;
+        height: 80px;
+        padding-top: 0;
+        .d1img {
+            width: 200px;
+            height: 40px;
+            margin-left: 10px;
+            img {
+                width: 120px;
+                height: 40px;
+            }
+        }
+        .home2 {
+            font-size: 22px;
+            margin-right: 10px;
+        }
+    }
+    .s1 .d2 {
+        margin-left: 0;
+        width: 100vw;
+        .text {
+            width: 90vw;
+            left: 5vw;
+            padding-top: 100px;
+            h1 {
+                font-size: 28px;
+            }
+        }
+    }
+    .s2 {
+        height: auto;
+        .alldivs {
+            width: 100vw;
+            padding: 0;
+            .d3, .d4, .d5 {
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 30px;
+                #ol1, #ol2 {
+                    width: 90vw;
+                    min-width: 0;
+                    margin-left: 0;
+                    .icon {
+                        font-size: 36px;
+                        width: 60px;
+                        height: 60px;
+                        padding-right: 10px;
+                    }
+                    .text, .text1 {
+                        width: 70vw;
+                        h1 {
+                            font-size: 18px;
+                            margin-top: 10px;
+                        }
+                        p {
+                            font-size: 12px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .s3 {
+        flex-direction: column;
+        height: auto;
+        .d7 {
+            width: 100vw;
+            margin-top: 30px;
+            margin-left: 0;
+            h1 {
+                font-size: 22px;
+                width: 90vw;
+            }
+        }
+        .d8 .buttons {
+            width: 90vw;
+            margin-left: 0;
+            gap: 10px;
+            .btn1, .btn2 {
+                width: 120px;
+                padding: 10px 10px;
+                font-size: 12px;
+            }
+        }
+    }
+    .s4 {
+        height: auto;
+        margin-top: 40px;
+        .d9 .text {
+            width: 90vw;
+            .t1 {
+                font-size: 14px;
+            }
+            .t2 {
+                font-size: 22px;
+            }
+        }
+        .container {
+            width: 95vw;
+            margin-left: 0;
+            margin-top: 10px;
+            padding: 10px;
+            .tabs {
+                gap: 10px;
+                margin-left: 0;
+                flex-wrap: wrap;
+            }
+            .tab-content {
+                width: 90vw;
+                height: auto;
+            }
+        }
+        .cont1 {
+            margin-top: 30px;
+            width: 90vw;
+            margin-left: 0;
+        }
+    }
+    .s5 {
+        height: auto;
+        .image {
+            display: none;
+        }
+        .login {
+            width: 100vw;
+            margin-left: 0;
+            .heading {
+                width: 90vw;
+                margin-left: 0;
+                margin-top: 30px;
+            }
+            .login1, .login2 {
+                width: 90vw;
+                margin-left: 0;
+                form {
+                    width: 90vw;
+                    gap: 10px;
+                    margin-left: 0;
+                    margin-top: 30px;
+                    .user, .password, .subject {
+                        width: 100%;
+                        input {
+                            width: 100%;
+                        }
+                    }
+                    fieldset select {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .s6 {
+        height: auto;
+        h1, h2 {
+            width: 90vw;
+            margin-left: 5vw;
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        .card {
+            width: 90vw;
+            margin-left: 5vw;
+            height: auto;
+            flex-direction: column;
+            border-radius: 10px;
+        }
+    }
+    .card .para1 {
+        width: 100%;
+        margin-left: 0;
+        .icon1 {
+            width: 40px;
+            height: 40px;
+            margin-top: 20px;
+            i {
+                font-size: 24px;
+            }
+        }
+        .text4 {
+            width: 90vw;
+            p {
+                font-size: 13px;
+                width: 80vw;
+                margin-top: 20px;
+            }
+            h1 {
+                font-size: 15px;
+                margin-top: 10px;
+            }
+            h2 {
+                font-size: 12px;
+                margin-top: 2px;
+            }
+        }
+    }
+    .card .photo {
+        width: 100%;
+        img {
+            width: 100px;
+            height: 80px;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+    .s7 {
+        height: auto;
+        .photo1 {
+            flex-direction: column;
+            .image1, .image2, .image3 {
+                flex-direction: row;
+                img {
+                    width: 80px;
+                    height: 30px;
+                    margin: 5px;
+                }
+            }
+        }
+        .copyright {
+            margin-top: 20px;
+            height: auto;
+            p {
+                font-size: 12px;
+                width: 90vw;
+                height: auto;
+            }
+        }
+    }
+}
